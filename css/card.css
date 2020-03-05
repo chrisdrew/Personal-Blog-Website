@@ -1,0 +1,59 @@
+.card-holder{
+    display: flex;
+    list-style-type: none;
+    padding-left: 0px;
+}
+
+.ch-card{
+    flex-grow: inherit;
+    margin: 5px;
+    display: inherit;
+    width: 100%;
+    height: auto;
+    border: 4px solid #8E9AAF;
+    border-radius: 5px;
+}
+
+.ch-info{
+    list-style-type: none;
+    padding: 5px;
+}
+
+.ch-info li{
+    padding: 10px;
+}
+
+.ch-info li:nth-child(2){
+    padding: 0 10px 0 10px;
+}
+
+.ch-title{
+    font-size: 22px;
+    color: #FF4E00;
+}
+
+.ch-date{
+    color: #763C87;
+}
+
+.ch-img {
+    width: 50%;
+    margin: 0 auto;
+}
+
+/* media css */
+
+@media (min-width: 769px) {
+    .ch-img{
+        display: none;
+    }
+}
+
+@media (min-width: 1440px) {
+    .ch-card{
+        height: 250px;
+    }
+    .ch-img{
+        display: block;
+    }
+}
