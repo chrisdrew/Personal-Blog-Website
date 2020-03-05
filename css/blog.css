@@ -1,0 +1,160 @@
+/* 
+    Colors where taken from
+    https://coolors.co/f1efeb-fcfdf7-f9f8f4-f2f1ef-f8fbf4
+*/
+
+html{
+    background-color: #fff;
+    font-family: "Open Sans", arial, sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+    color: #2b395e;
+}
+
+a{
+    color: #007bff;
+}
+
+.wrapper{
+    border-radius: 5px;
+    display: grid;
+    grid-template-areas: 
+      "header"
+      "nav"
+      "auth"
+      "content"
+      "footer";
+    grid-gap: 5px;
+    grid-template-columns: 1fr;
+    width: auto;
+    height: auto;
+}
+
+h2{
+    border-bottom: 1px solid #dee2e6;
+}
+
+.main-header{
+    grid-area: header;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.nav{
+    grid-area; nav;
+    border-radius: 5px;
+}
+
+.nav  ul{
+    list-style-type: none;
+    text-align: center;
+    padding: 10px;
+}
+
+.main-content{
+    grid-area: content;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+blockquote{
+    border-left: solid 6px #BEB06E;
+    padding-left: 5px;
+}
+
+.author{
+    grid-area: auth;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.main-footer{
+    grid-area: footer;
+    text-align: center;
+    border-radius: 5px;
+}
+
+
+
+.internal-grid{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "ig-1"
+      "ig-2";
+}
+
+.ig-1{
+    grid-area: ig-1;
+}
+
+.ig-2{
+    grid-area: ig-2;
+}
+
+.card-img{
+    display: none;
+}
+
+/* author */
+
+.author h3{
+    border-bottom: 1px solid #dee2e6;
+}
+
+.author-img{
+    border: 4px solid #8E9AAF;
+    border-radius: 15px;
+    background-image: url(../images/me.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 200px;
+    width: auto;
+    margin: auto;
+}
+
+.social-media{
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+}
+
+.social-media li{
+    width: 20px;
+    height: 20px;
+    padding: 5px;
+}
+
+/* media css */
+
+@media (min-width: 769px) {
+    .wrapper{
+        grid-template-columns: 1fr 4fr 1fr 1.5fr;
+        grid-template-areas: 
+          "header header  header header"
+          "nav    content content auth"
+          "footer footer  footer footer";
+    }
+
+    .nav  ul{
+        text-align: left;
+    }
+
+    .author-img{
+        height: 35%;
+        width: 85%;
+    }
+
+    .internal-grid{
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+          "ig-1 ig-2";
+    }
+}
