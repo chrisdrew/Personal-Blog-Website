@@ -1,7 +1,7 @@
 .card-holder{
     display: flex;
     list-style-type: none;
-    padding-left: 0px;
+    padding-left: 0;
 }
 
 .ch-card{
@@ -10,11 +10,16 @@
     display: inherit;
     width: 100%;
     height: auto;
-    border: 4px solid #8E9AAF;
+    border: 1px solid #ccc;
     border-radius: 5px;
+    box-shadow: 1px 1px 3px 1px #ccc;
+    overflow: hidden;
+    text-decoration: none;
+    color: #000;
 }
 
 .ch-info{
+    width: 100%;
     list-style-type: none;
     padding: 5px;
 }
@@ -39,15 +44,10 @@
 .ch-img {
     width: 50%;
     margin: 0 auto;
+    display: none;
 }
 
-/* media css */
-
-@media (min-width: 769px) {
-    .ch-img{
-        display: none;
-    }
-}
+/* media queries */
 
 @media (min-width: 1440px) {
     .ch-card{
