@@ -153,12 +153,20 @@ blockquote{
     border: 1px solid #ccc;
     border-radius: 5px;
     box-shadow: 1px 1px 3px 1px #ccc;
-    background-image: url(../images/me.jpg);
-    background-size: cover;
-    background-position: center;
-    height: 200px;
     width: auto;
-    margin: auto;
+    margin-top: 16px;
+    overflow: hidden;
+}
+
+.author-img img{
+    width: 100%;
+    vertical-align: middle;
+}
+
+.img-cap{
+    padding: 5px;
+    font-size: 12px;
+    text-align: center;
 }
 
 .social-media{
